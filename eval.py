@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 # # Getting results from the aligned word embeddings
 # Importing
 
@@ -13,9 +10,6 @@ import numpy as np
 from tqdm import tqdm
 from itertools import repeat
 import pandas as pd
-
-
-# In[ ]:
 
 
 # Loading aligned embeddings
@@ -40,9 +34,6 @@ def load_vec(emb_path, nmax):
     return embeddings, id2word, word2id
 
 
-# In[ ]:
-
-
 # Getting nearest neigbours
 
 def get_nn(word, src_emb, src_id2word, tgt_emb, tgt_id2word, K):
@@ -59,9 +50,6 @@ def get_nn(word, src_emb, src_id2word, tgt_emb, tgt_id2word, K):
         ids.append(word2id[word])
 
     return translations, score, ids
-
-
-# In[ ]:
 
 
 def get_tgt(eval_df, src_lng, tgt_lng, src_embeddings, src_id2word, tgt_embeddings, tgt_id2word, k_num):
@@ -102,9 +90,6 @@ def get_tgt(eval_df, src_lng, tgt_lng, src_embeddings, src_id2word, tgt_embeddin
     return words, trs, position, scors, rel_scors, ratio_scors, indexes
 
 
-# In[ ]:
-
-
 def making_df(src_lng, tgt_lng, words, trs, position, scors, rel_scors, ratio_scors, indexes):
     df = {}
     df[src_lng] = words
@@ -121,9 +106,6 @@ def making_df(src_lng, tgt_lng, words, trs, position, scors, rel_scors, ratio_sc
     return result
 
 
-# In[ ]:
-
-
 def computing_accuracy(result, eval_df, src_lng, tgt_lng):
     merged_df = pd.merge(result, eval_df, how='left',indicator=True, on=[src_lng, tgt_lng])
     correct = merged_df[merged_df["_merge"] == 'both']
@@ -132,8 +114,6 @@ def computing_accuracy(result, eval_df, src_lng, tgt_lng):
     print("Precision is: ", precision)
     print("Recall is: ", recall)
     return merged_df
-
-# In[ ]:
 
 
 def main(src_lng, tgt_lng, src_path, tgt_path, eval_df, k_num, nmax, output):
