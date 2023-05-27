@@ -1,7 +1,7 @@
 # Evaluation_of_CWE
 
 ## Evaluation and training datasets and script for evaluating cross-lingual embedding models
-This repository contains three evaluation datasets for evaluating Estonian-Slovak, Czech-Slovak, and English-Korean language combinations, and training datasets for training Estonian-Slovak and Czech-Slovak (using either [FastText](https://fasttext.cc/) or [SketchEngine](https://embeddings.sketchengine.eu/) pre-trained monolingual word embeddings. Moreover, there is also a script using partially code from [MUSE](https://github.com/facebookresearch/MUSE)[(Conneau et al., 2017)](https://arxiv.org/pdf/1710.04087.pdf). 
+This repository contains three evaluation datasets for evaluating Estonian-Slovak, Czech-Slovak, and English-Korean language combinations, and training datasets for training Estonian-Slovak and Czech-Slovak (using either [FastText](https://fasttext.cc/) or [SketchEngine](https://embeddings.sketchengine.eu/) pre-trained monolingual word embeddings. Moreover, there is also a script using partially code from [MUSE](https://github.com/facebookresearch/MUSE) [(Conneau et al., 2017)](https://arxiv.org/pdf/1710.04087.pdf). 
 
 ### Requirements
 * [NumPy](https://numpy.org/)
