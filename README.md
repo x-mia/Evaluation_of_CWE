@@ -30,7 +30,8 @@ python eval.py --src_lng en --tgt_lng ko --src_path vectors-en.txt --tgt_path ve
   booktitle = "Proceedings of the eLex 2023 conference",
   year = "2023",
   publisher = "Lexical Computing CZ, s.r.o.",
-  pages = "1--18"
+  pages = "1--18",
+  url = "https://elex.link/elex2023/wp-content/uploads/9.pdf"
 }
 ```
 
