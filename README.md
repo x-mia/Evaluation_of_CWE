@@ -1,7 +1,7 @@
 # Evaluation_of_CWE
 
 ## Evaluation and training datasets and script for evaluating cross-lingual embedding models
-This repository contains three evaluation datasets for evaluating Estonian-Slovak, Czech-Slovak, and English-Korean language combinations, and training datasets for training Estonian-Slovak and Czech-Slovak (using either [FastText](https://fasttext.cc/) or [SketchEngine](https://embeddings.sketchengine.eu/) pre-trained monolingual word embeddings. Moreover, there is a script using partially code from [MUSE](https://github.com/facebookresearch/MUSE) [(Conneau et al., 2017)](https://arxiv.org/pdf/1710.04087.pdf). 
+This repository contains three evaluation datasets for evaluating Estonian-Slovak, Czech-Slovak, and English-Korean language combinations, and training datasets for training Estonian-Slovak and Czech-Slovak (using either [FastText](https://fasttext.cc/) or [SketchEngine](https://embeddings.sketchengine.eu/) pre-trained monolingual word embeddings. Moreover, there is a script using partial code from [MUSE](https://github.com/facebookresearch/MUSE) [(Conneau et al., 2017)](https://arxiv.org/pdf/1710.04087.pdf). 
 
 ### Requirements
 * [NumPy](https://numpy.org/)
@@ -21,15 +21,16 @@ python eval.py --src_lng en --tgt_lng ko --src_path vectors-en.txt --tgt_path ve
 ### References
 * Please cite [[1]](https://elex.link/elex2021/wp-content/uploads/2021/08/eLex_2021_06_pp107-120.pdf) if you found the resources in this repository useful.
 
-[1] Denisová, M and Rychlý, P. (2023). [Evaluation of the Cross-lingual Embedding Models from the Lexicographic Perspective.]([https://elex.link/elex2021/wp-content/uploads/2021/08/eLex_2021_06_pp107-120.pdf](https://elex.link/elex2023/)) In Proceedings of the eLex 2023 conference. Lexical Computing CZ, s.r.o. 
+[1] Denisová, M and Rychlý, P. (2023). [Evaluation of the Cross-lingual Embedding Models from the Lexicographic Perspective.](https://elex.link/elex2023/wp-content/uploads/9.pdf) In *Proceedings of the eLex 2023 conference*, pp. 1-18. Lexical Computing CZ, s.r.o. 
 
 ```
-@Inproceedings{denisova-2021,
+@Inproceedings{denisova-rychly-2023,
   author = "Michaela Denisová and Pavel Rychlý",
   title = "Evaluation of the Cross-lingual Embedding Models from the Lexicographic Perspective",
   booktitle = "Proceedings of the eLex 2023 conference",
   year = "2023",
-  publisher = "Lexical Computing CZ, s.r.o."
+  publisher = "Lexical Computing CZ, s.r.o.",
+  pages = "1--18"
 }
 ```
 
